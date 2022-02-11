@@ -1,0 +1,24 @@
+@font-face { 
+    font-family: MontExtraLight; 
+    src: url("./assets/font/Mont/Mont-ExtraLightDEMO.otf"); 
+}
+
+@font-face { 
+    font-family: MontHeavy; 
+    src: url("./assets/font/Mont/Mont-HeavyDEMO.otf"); 
+}
+
+@font-face { 
+    font-family: Biko; 
+    src: url("./assets/font/Biko/Biko_Regular.otf"); 
+}
+
+@font-face { 
+    font-family: BikoBold; 
+    src: url("./assets/font/Biko/Biko_Bold.otf"); 
+}
+
+@font-face { 
+    font-family: KenyanCoffee; 
+    src: url("./assets/font/KenyanCoffee/kenyan\ coffee\ rg.ttf"); 
+}

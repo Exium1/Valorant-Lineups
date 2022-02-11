@@ -1,0 +1,55 @@
+.landing-section {
+    height: calc(100vh - 75px);
+    margin: 75px auto 0 auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-family: MontHeavy;
+    position: relative;
+}
+
+img.landing-image {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.3);
+    position: absolute;
+    z-index: -1;
+}
+
+.landing-text {
+    position: absolute;
+    top: 5vh;
+    min-width: 800px;
+    width: 50%;
+}
+
+.landing-text h1 {
+    font-size: 5.5em;
+    margin: 30px 0 20px 0;
+}
+
+.landing-text p {
+    font-size: 1.5em;
+    /* font-family: MontHeavy; */
+    width: 70%;
+}
+
+.landing-section .page-container {
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .landing-text {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    .landing-text * {
+        text-align: center;
+    }
+
+    .landing-text p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+img.map-bg-image {
+    height: calc(100vh - 75px);
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.3);
+    position: fixed;
+    z-index: -1;
+    top: 75px;
+}
+
+.map-header h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: KenyanCoffee;
+    text-transform: uppercase;
+    margin: 50px 0px;
+}
+
+.tabs-container {
+    width: 100%;
+    background-color: #2f2f2f;
+    box-shadow: 0px 0px 15px 3px #000;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 200px;
+}
+
+.tabs-container > h2 {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    grid-row: 1 / span 1;
+}
+
+.tabs-buttons {
+    display: inline-block;
+    background-color: #3e3e3e;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px 0px 0px 15px;
+    grid-column: 1 / 2;
+    cursor: pointer;
+}
+
+.tabs-buttons li {
+    display: block;
+}
+
+.tabs-buttons li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    padding: 15px;
+    transition: 100ms;
+    cursor: inherit;
+}
+
+.tabs-buttons li img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: 100ms;
+}
+
+.tabs-buttons li:hover img {
+    margin-right: 5px;
+}
+
+.tabs-buttons li:hover button {
+    transform: scale(1.2) translateX(10px);
+}
+
+li.selected-tab {
+    background-color: #4d4d4d;
+}
+
+li.selected-tab:last-child {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.tabs-content {
+    display: block;
+    grid-column: 2 / 3;
+    width: 90%;
+    margin: 0 auto;
+}
+

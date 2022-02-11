@@ -1,0 +1,14 @@
+* {
+    color: #E2E2E2;
+    font-family: Biko;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2F2F2F;
+}
+
+img {
+    pointer-events: none;
+}

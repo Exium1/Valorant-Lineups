@@ -1,0 +1,24 @@
+.page-container {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    position: relative;
+    display: block;
+    padding: 0.01px;
+}
+
+.page-container.first {
+    margin-top: 75px;
+}
+
+.page-container.relative {
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+
+    .page-container {
+        width: 90%;
+    }
+
+}

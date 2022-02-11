@@ -1,0 +1,18 @@
+.tabs-content h2 {
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.site-map-container {
+    position: relative;
+}
+
+.site-map-container img {
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}

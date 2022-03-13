@@ -1,47 +1,49 @@
 .site-options {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .site-option {
-    text-align: center;
-    position: relative;
+	text-align: center;
+	position: relative;
 }
 
 .site-options img {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    object-fit: cover;
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	object-fit: cover;
 }
 
 .site-options a.site-name {
-    font-size: 1.8em;
-    color: yellow;
-    font-family: BikoBold;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	font-size: 1.8em;
+	color: yellow;
+	font-family: BikoBold;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 div.site-selected {
-    position: relative;
+	position: relative;
 }
 
 .site-selected img {
-    width: 100%;
-}
-
-.site-selected {
+	width: 100%;
+	user-select: none;
 }
 
 .spike-location {
-    width: 5%;
-    height: 5%;
-    background-color: green;
-    position: absolute;
-    top: 0;
-    left: 0;
+	position: absolute;
+	height: 75px;
+	width: 75px;
+}
+
+.spike-location button {
+	background-color: black;
+	border-color: #fff;
+	cursor: pointer;
+	border-radius: 50%;
 }

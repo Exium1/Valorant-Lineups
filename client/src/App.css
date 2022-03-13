@@ -1,14 +1,14 @@
 * {
-    color: #E2E2E2;
-    font-family: Biko;
+	color: #e2e2e2;
+	font-family: Montserrat;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #2F2F2F;
+	margin: 0;
+	padding: 0;
+	background-color: #2f2f2f;
 }
 
 img {
-    pointer-events: none;
+	pointer-events: none;
 }

@@ -1,88 +1,73 @@
-img.map-bg-image {
-    height: calc(100vh - 75px);
-    width: 100vw;
-    object-fit: cover;
-    filter: brightness(0.3);
-    position: fixed;
-    z-index: -1;
-    top: 75px;
+img.maps-background {
+	height: calc(100vh - 75px);
+	width: 100vw;
+	object-fit: cover;
+	filter: brightness(0.3);
+	position: fixed;
+	z-index: -1;
+	top: 75px;
 }
 
-.map-header h1 {
-    font-size: 4em;
-    text-align: center;
-    font-family: KenyanCoffee;
-    text-transform: uppercase;
-    margin: 50px 0px;
+.maps-page h1 {
+	font-size: 4em;
+	text-align: center;
+	font-family: KenyanCoffee;
+	text-transform: uppercase;
+	margin: 50px 0px;
 }
 
-.tabs-container {
-    width: 100%;
-    background-color: #2f2f2f;
-    box-shadow: 0px 0px 15px 3px #000;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: 200px;
+.maps-container {
+	width: 100%;
+	background-color: #2f2f2f;
+	box-shadow: 0px 0px 15px 3px #000;
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: 220px;
 }
 
-.tabs-container > h2 {
-    display: block;
-    width: 100%;
-    margin: 20px;
-    grid-row: 1 / span 1;
+ul.maps-agents {
+	display: inline-block;
+	background-color: #3e3e3e;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-radius: 15px 0px 0px 15px;
+	grid-column: 1 / 2;
+	cursor: pointer;
 }
 
-.tabs-buttons {
-    display: inline-block;
-    background-color: #3e3e3e;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 0px 0px 0px 15px;
-    grid-column: 1 / 2;
-    cursor: pointer;
+ul.maps-agents li {
+	padding: 3px 10px;
+	transition: 200ms;
 }
 
-.tabs-buttons li {
-    display: block;
+ul.maps-agents li.selected-agent a {
+	color: #feb3b8;
 }
 
-.tabs-buttons li button {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-    padding: 15px;
-    transition: 100ms;
-    cursor: inherit;
+ul.maps-agents li:hover {
+	transform: scale(1.1) translateX(10px);
 }
 
-.tabs-buttons li img {
-    height: 40px;
-    vertical-align: middle;
-    margin-right: 10px;
-    transition: 100ms;
+ul.maps-agents li a {
+	font-size: 1.2em;
+	text-decoration: none;
+	transition: 200ms;
+	display: block;
 }
 
-.tabs-buttons li:hover img {
-    margin-right: 5px;
+ul.maps-agents img {
+	width: 50px;
+	height: 50px;
+	transition: 200ms;
+	vertical-align: middle;
+	margin-right: 10px;
+	user-select: none;
 }
 
-.tabs-buttons li:hover button {
-    transform: scale(1.2) translateX(10px);
+div.maps-content-wrapper {
+	display: block;
+	grid-column: 2 / 3;
+	width: 90%;
+	margin: 0 auto;
 }
-
-li.selected-tab {
-    background-color: #4d4d4d;
-}
-
-li.selected-tab:last-child {
-    border-radius: 0px 0px 0px 15px;
-}
-
-.tabs-content {
-    display: block;
-    grid-column: 2 / 3;
-    width: 90%;
-    margin: 0 auto;
-}
-

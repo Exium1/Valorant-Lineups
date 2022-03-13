@@ -2,7 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-const items = require("./routes/api/items.js");
+const lineups = require("./routes/api/lineups.js");
+const spikeLocations = require("./routes/api/spikeLocations.js");
 const app = express();
 
 // Load config
@@ -22,7 +23,8 @@ const conn = mongoose
 	.catch((err) => console.log(err));
 
 // Use Routes
-app.use("/api/items", items);
+app.use("/api/lineups", lineups);
+app.use("/api/spike-locations", spikeLocations);
 
 const port = process.env.PORT || 5000;
 
